@@ -13,27 +13,34 @@ import javax.swing.JOptionPane;
  */
 public class Exercicio8 {
     public static void main(String[] args) {
-        String resposta;
+        String resposta, mensagem = "";
         float peso, altura;
         
         resposta = JOptionPane.showInputDialog("Informe a altura: ");
         altura = Float.parseFloat(resposta);
         
-        resposta = JOptionPane.showInputDialog("Informe o gênero: ");
+        resposta = JOptionPane.showInputDialog("Informe o gênero (feminino/masculino): ");
         
-        peso = pesoIdeal(altura,resposta); 
+        if (resposta.equalsIgnoreCase("Feminino") || resposta.equalsIgnoreCase("Masculino")) {
+            peso = pesoIdeal(altura,resposta);
+            mensagem = "O peso ideal é: " + Math.round(peso) + "kg";
+        } else {
+            mensagem = "Erro: Somente feminino ou masculino!!";
+        }
+        
+        JOptionPane.showMessageDialog(null, mensagem);
     }
     
     public static float pesoIdeal(float alt, String resposta){
-        float p;
+        float resultado = 0;
         String genero = resposta;
         
-        if (genero.equalsIgnoreCase("Femino")) {
-            p = 72.7 * alt - 58;
-        } else {
-            
+        if (genero.equalsIgnoreCase("Feminino")) {
+            resultado = (float) (72.7 * alt - 58);
+        } else if (genero.equalsIgnoreCase("Masculino")) {
+            resultado = (float) ( 62.1 * alt - 44.7);
         }
         
-        return p;
+        return resultado;
     }
 }
