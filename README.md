@@ -2,3 +2,4 @@
 ## 📌 Exercícios a serem praticados
 - [ ] Procedimentos e Funções
 - [ ] Classes e Objetos
+- [x] Construtores
