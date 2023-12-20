@@ -38,6 +38,73 @@ public class Lutador {
     }
     
     public String empatarLuta() {
+        empates+=1;
         return "Lutador{" + "empatar=" + empates + "}";
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public int getVitoria() {
+        return vitoria;
+    }
+
+    public void setVitoria(int vitoria) {
+        this.vitoria = vitoria;
+    }
+
+    public int getDerrota() {
+        return derrota;
+    }
+
+    public void setDerrota(int derrota) {
+        this.derrota = derrota;
+    }
+
+    public int getEmpates() {
+        return empates;
+    }
+
+    public void setEmpates(int empates) {
+        this.empates = empates;
+    }
+    
+    
 }

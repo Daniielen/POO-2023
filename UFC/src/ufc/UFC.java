@@ -5,9 +5,13 @@
  */
 package ufc;
 
+import java.util.Scanner;
+
+
+
 /**
  *
- * @author aluno
+ * @author danielen
  */
 public class UFC {
 
@@ -15,7 +19,11 @@ public class UFC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Luta luta = new Luta();
+        
+       Scanner scanner = new Scanner(System.in);
+       
+       
     }
     
 }
